@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Menu, X } from "lucide-react";
 import { useState } from "react";
-
+import Logo from "@/assets/logo.jpg";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,7 +9,6 @@ const Header = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Courses", href: "#courses" },
-    { name: "Faculty", href: "#faculty" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -19,8 +18,8 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-primary-foreground" />
+            <div className="flex items-center justify-center">
+              <img src={Logo} alt="Logo" className="w-12 h-12" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground">Learning Academy</h1>

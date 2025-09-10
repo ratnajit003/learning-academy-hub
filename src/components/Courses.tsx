@@ -5,36 +5,25 @@ import { Clock, Users, BookOpen, CheckCircle } from "lucide-react";
 const Courses = () => {
   const courses = [
     {
-      title: "Engineering Entrance Preparation",
-      description: "Comprehensive preparation for JEE Main, JEE Advanced, and state engineering entrance exams",
+      title: "Bachelor of Education (B.Ed)",
+      description: "Professional course to prepare graduates for teaching careers in schools",
       duration: "2 Years",
-      students: "150+",
-      subjects: ["Physics", "Chemistry", "Mathematics"],
-      features: ["Expert Faculty", "Mock Tests", "Doubt Clearing Sessions", "Study Materials"]
+      students: "80+",
+      features: ["Practical Training", "Teaching Internships", "Curriculum Design", "Workshops"]
     },
     {
-      title: "Medical Entrance Preparation", 
-      description: "Complete NEET preparation with biology focus and medical entrance coaching",
+      title: "Bachelor of Physical Education (B.P.Ed)",
+      description: "Undergraduate program focused on physical education, sports, and fitness training",
       duration: "2 Years",
-      students: "120+",
-      subjects: ["Physics", "Chemistry", "Biology"],
-      features: ["Medical Experts", "NEET Mock Tests", "Biology Lab", "Current Affairs"]
+      students: "60+",
+      features: ["Sports Training", "Fitness Programs", "Outdoor Activities", "Workshops"]
     },
     {
-      title: "Foundation Courses",
-      description: "Strong foundation building for classes 8th, 9th, and 10th students",
-      duration: "1 Year",
-      students: "200+",
-      subjects: ["Science", "Mathematics", "English"],
-      features: ["Basic Concepts", "Interactive Learning", "Regular Assessment", "Parent Meetings"]
-    },
-    {
-      title: "Competitive Exam Coaching",
-      description: "Preparation for various competitive exams including banking, SSC, and civil services",
-      duration: "1 Year",
-      students: "100+",
-      subjects: ["General Knowledge", "Reasoning", "English", "Mathematics"],
-      features: ["Current Affairs", "Mock Interviews", "Group Discussions", "Online Tests"]
+      title: "Master of Education (M.Ed)",
+      description: "Postgraduate program for advanced study in pedagogy, research, and educational leadership",
+      duration: "2 Years",
+      students: "40+",
+      features: ["Research Projects", "Advanced Pedagogy", "Educational Leadership", "Workshops"]
     }
   ];
 
@@ -48,7 +37,7 @@ const Courses = () => {
               Our Courses
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive programs designed to help students achieve their academic goals 
+              Comprehensive programs designed to help students achieve their academic goals
               and excel in competitive examinations.
             </p>
           </div>
@@ -61,7 +50,7 @@ const Courses = () => {
                   <CardTitle className="text-2xl text-foreground mb-2">{course.title}</CardTitle>
                   <p className="text-muted-foreground leading-relaxed">{course.description}</p>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-6">
                   {/* Course Info */}
                   <div className="flex gap-6">
@@ -72,21 +61,6 @@ const Courses = () => {
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-primary" />
                       <span className="text-sm text-muted-foreground">{course.students} Students</span>
-                    </div>
-                  </div>
-
-                  {/* Subjects */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <BookOpen className="w-4 h-4 text-accent" />
-                      <span className="font-medium text-foreground">Subjects Covered:</span>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {course.subjects.map((subject, idx) => (
-                        <span key={idx} className="bg-accent-light text-accent px-3 py-1 rounded-full text-sm">
-                          {subject}
-                        </span>
-                      ))}
                     </div>
                   </div>
 
@@ -102,10 +76,6 @@ const Courses = () => {
                       ))}
                     </div>
                   </div>
-
-                  <Button variant="default" className="w-full">
-                    Learn More
-                  </Button>
                 </CardContent>
               </Card>
             ))}
