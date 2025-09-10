@@ -15,13 +15,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+91 94370 XXXXX", "+91 99370 XXXXX", "Landline: 06727-XXXXX"],
+      details: ["+91 90902 98220", "+91 70089 48248"],
       primary: false
     },
     {
       icon: Mail,
       title: "Email Address",
-      details: ["info@learningacademy.edu.in", "admissions@learningacademy.edu.in", "principal@learningacademy.edu.in"],
+      details: ["25learningacademy@gmail.com"],
       primary: false
     },
     {
